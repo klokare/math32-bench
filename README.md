@@ -1,17 +1,12 @@
 # math32-bench
 Benchmarking my math32 library against standard library and other math32 implementations
 
-
-Other float32 math packages used: ([found at GolangLibs.com](https://golanglibs.com/top?q=float32))
-	* [chewxy](https://github.com/chewxy/math32)
-	* [barnex](https://github.com/barnex/fmath)
-
-
 Benchmark initial run when the math32 library was just calling the standard library's math package and making the casts to/from float32 as required. The table uses the standard library's math package as the baseline. The values below show the relative performance of each 32-bit library compared to the baseline. The table shows 4 packages
-	* [Golang64](https://golang.org/pkg/math/) - This is the standard library using straight 64-bit floats. This is the target performance. 
-	* [Klokare](https://github.com/klokare/math32) - The implemenation I am working on
-	* [chewxy](https://github.com/chewxy/math32) - An API-complete library with some really good improvements and some room for work
-	* [barnex](https://github.com/barnex/fmath) - An incomplete library that mostly just casts to float64 and calls the standard library. I included this because it will be a good comparison as I work to improve the Klokare libary.
+
+* [Golang64](https://golang.org/pkg/math/) - This is the standard library using straight 64-bit floats. This is the target performance. 
+* [Klokare](https://github.com/klokare/math32) - The implemenation I am working on
+* [chewxy](https://github.com/chewxy/math32) - An API-complete library with some really good improvements and some room for work
+* [barnex](https://github.com/barnex/fmath) - An incomplete library that mostly just casts to float64 and calls the standard library. I included this because it will be a good comparison as I work to improve the Klokare libary.
 
 
 Function|Golang64|Klokare|Chewxy|Barnex
